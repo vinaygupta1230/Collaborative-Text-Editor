@@ -18,7 +18,8 @@ app.use(express.json());
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-mongoose.connect("mongodb+srv://vinaygupta1281:textEditorProject@cluster0.e8fkvzj.mongodb.net/textEditorData").then(()=>console.log("MongoDb is Running"))
+// mongoose.connect("mongodb+srv://vinaygupta1281:textEditorProject@cluster0.e8fkvzj.mongodb.net/textEditorData").then(()=>console.log("MongoDb is Running"))
+mongoose.connect(MONGODB_URL).then(()=>console.log("MongoDb is Running"))
 // mongoose.connect("mongodb://127.0.0.1:27017/googleDocsClone").then(()=>console.log("MongoDb is Running"))
 
 
